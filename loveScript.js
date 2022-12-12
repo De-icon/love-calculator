@@ -47,7 +47,7 @@ btn.addEventListener('click', () => {
             outPut.innerHTML = `${n}% Congratulations!! Your Love is a friendship set to music.`
         } else {
             outPut1.innerHTML = `${fNameValue} & ${sNameValue}`
-            outPut.innerHTML = `${n}% Look for something better to do with your life`
+            outPut.innerHTML = `${n}% Being friends is a lovely thing from the look of thing you guys are going to look great in the futuer`
         }
     }
 
