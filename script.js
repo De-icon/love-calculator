@@ -51,7 +51,8 @@ btn.addEventListener('click', () => {
         }
     }
 
-    
+    fName.value = ''
+    sName.value = ''
 
 
    
