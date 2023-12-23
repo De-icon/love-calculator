@@ -14,25 +14,41 @@ main{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    font-family: 'Abril Fatface', cursive;
+    p{
+        color: aqua;
+        a{
+            font-weight: 700;
+            text-decoration: none;
+        }
+    }
+
 }
 .comtianer{
     width: 350px;
-    height: 300px;
+    height: 380px;
+    padding: 30px 0;
     background: rgba(0, 0, 0, .40);
     border-radius: 10px;
     box-shadow: 3px 3px 14px rgba(0, 0, 0,), -3px -3px 14px rgba(0, 0, 0,);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     position: relative;
     
     h1{
-        margin-bottom: 20px;
-        position: absolute;
+        margin-bottom: 10px;
+        // position: absolute;
         top: 20px;
         letter-spacing: 2px;
         font-family: 'Rubik Gemstones', cursive;
@@ -53,15 +69,19 @@ main{
             outline: none;
             padding: 3px;
             letter-spacing: 1px;
-            font-family: 'Poppins';
+            font-family: 'Bebas Neue', cursive;
         }
+        input[placeholder]{
+            color: #d43a3a;
+            font-weight: 500;
+        } 
         input[placeholder]:focus{
-            color: #FDFDFC;
+            // color: #FDFDFC;
             box-shadow: 0 1px #FDFDFC;
         }
     }
     button{
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         padding: 5px 20px;
         border-radius: 30px;
         background: transparent;
@@ -69,7 +89,7 @@ main{
         border: none;
         box-shadow: 0 0 4px #FDFDFC;
         cursor: pointer;
-        font-family: 'Poppins';
+        font-family: 'Abril Fatface', cursive;
 
 
     }
@@ -77,21 +97,21 @@ main{
         box-shadow: 0 0 10px #FDFDFC;
     }
     .output{
-        position: absolute;
+        // position: absolute;
         bottom: 10px;
-        margin-top: 10px;
+        // margin-top: 40px;
         width: 310px;
         height: 100px;
         text-align: center;
-        h4, h5{
-            font-family: 'Poppins';
+        h3, h4{
+            font-family: 'Abril Fatface', cursive;
             font-weight:700;
+            font-size: 17px;
         }
     }
     .btn{
-        position: absolute;
-        right: 5px;
-        bottom: -15px;
+        // position: absolute;
+        margin-top: 0px;
         padding: 5px 20px;
         border-radius: 30px;
         background: transparent;
@@ -99,8 +119,14 @@ main{
         border: none;
         box-shadow: 0 0 4px #FDFDFC;
         cursor: pointer;
-        font-family: 'Poppins';
+        font-family: 'Abril Fatface', cursive;
 
     }
     
+}
+@media(max-width: 414px){
+    .comtianer{
+        width: 90%;
+        height: 420px;
+    }
 }
