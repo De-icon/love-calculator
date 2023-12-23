@@ -13,26 +13,41 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  flex-direction: column;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  font-family: "Abril Fatface", cursive;
+}
+footer p {
+  color: aqua;
+}
+footer p a {
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .comtianer {
   width: 350px;
-  height: 300px;
+  height: 380px;
+  padding: 30px 0;
   background: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   box-shadow: 3px 3px 14px rgb(0, 0, 0), -3px -3px 14px rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
 }
 .comtianer h1 {
-  margin-bottom: 20px;
-  position: absolute;
+  margin-bottom: 10px;
   top: 20px;
   letter-spacing: 2px;
   font-family: "Rubik Gemstones", cursive;
@@ -55,12 +70,15 @@ main {
   letter-spacing: 1px;
   font-family: "Bebas Neue", cursive;
 }
+.comtianer article input[placeholder] {
+  color: #d43a3a;
+  font-weight: 500;
+}
 .comtianer article input[placeholder]:focus {
-  color: #FDFDFC;
   box-shadow: 0 1px #FDFDFC;
 }
 .comtianer button {
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding: 5px 20px;
   border-radius: 30px;
   background: transparent;
@@ -74,21 +92,18 @@ main {
   box-shadow: 0 0 10px #FDFDFC;
 }
 .comtianer .output {
-  position: absolute;
   bottom: 10px;
-  margin-top: 10px;
   width: 310px;
   height: 100px;
   text-align: center;
 }
-.comtianer .output h4, .comtianer .output h5 {
+.comtianer .output h3, .comtianer .output h4 {
   font-family: "Abril Fatface", cursive;
   font-weight: 700;
+  font-size: 17px;
 }
 .comtianer .btn {
-  position: absolute;
-  right: 5px;
-  bottom: -15px;
+  margin-top: 0px;
   padding: 5px 20px;
   border-radius: 30px;
   background: transparent;
@@ -98,6 +113,10 @@ main {
   cursor: pointer;
   font-family: "Abril Fatface", cursive;
 }
-.comtianer .erro {
-  border-bottom: 2px solid #ff0404;
+
+@media (max-width: 414px) {
+  .comtianer {
+    width: 90%;
+    height: 420px;
+  }
 }/*# sourceMappingURL=stlye.css.map */
